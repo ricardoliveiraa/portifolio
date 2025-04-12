@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style_cv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@600" rel="stylesheet" />
+    <script src="../script/script_task_bar.js" defer></script>
     <title>CV</title>
 </head>
-<body>
-    
+<body onresize="resize()" >
+    <nav>
+        <div id="menu_container">
+            <span class="material-symbols-rounded" id="menu_bouton" onclick="clickMenu()">menu</span>
+            <ul id="liste_pages">
+                <li><a href="cv.html"><span class="material-symbols-rounded">person</span><p>CV</p></a></li>
+                <li><a href="etudes.html"><span class="material-symbols-rounded">bookmark</span><p>Etudes</p></a></li>
+                <li><a href="projets.html"><span class="material-symbols-rounded">dns</span><p>Projets</p></a></li>
+                <li><a href="loisir.html"><span class="material-symbols-rounded">sports_esports</span><p>Loisirs</p></a></li>
+                <li><a href="sources.html"><span class="material-symbols-rounded">page_info</span><p>Sources</p></a></li>
+            </ul>
+        </div>
+        <button id="bouton_mode" onclick="switchMode()">
+            <span class="material-symbols-rounded">dark_mode</span>
+            <span class="material-symbols-rounded">light_mode</span>
+        </button>
+    </nav>
+    <div class="separateur"></div>
+    <main>
+        <h1>Ricardo OLIVEIRA ABRANTES</h1>
+        <img src="../images/portrait.jpg" alt="Portrait de moi fait maison">
+        <div class="text_box">
+            <h2>Présentation</h2>
+            <p>Je m'appelle Ricardo OLIVEIRA ABRANTES, j'ai 17 ans et je suis un élève de première au lycée Saint-Exupéry de Fameck passionné par l'informatique. L'objectif de ce site est de vous montrer à la fois mes énormes compétences en web (modeste) mais aussi un peu mes projets personnels et un peu de ma vie. Je serais donc très ravis si mon professeur préféré M.Enclos me mettrait un 20 aprés avoir observer ce magnifique site web réaliser avec patience et délicatesse par son meilleur élève.</p>
+        </div>
+        <div class="separateur">
+            <h2>Les langages étudiés</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="separateur">
+            <h2>Mes compétences</h2>
+            <ul>
+                <li>Intelligence incalculable</li>
+                <li>Beauté démesurée</li>
+                <li>Pouvoir de dissuasion</li>
+            </ul>
+        </div>
+        <div class="separateur">
+            <h2>Langues parlées</h2>
+            <ul>
+                <li>Français</li>
+                <li>Portugais</li>
+                <li>Anglais</li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>

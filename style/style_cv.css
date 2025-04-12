@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yanone+Kaffeesatz&display=swap');
+
+:root {
+    --background_color: #ffffff;
+    --text_color: #000000;
+    --title_color: #EFD100;
+    --box_color: rgba(0, 0, 0, 0.25);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background-color: var(--background_color);
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu_bouton {
+    color: var(--text_color);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 4em;
+    margin: 10px;
+}
+
+#liste_pages {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5.5em;
+    left: 1em;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    list-style: none;
+    height: auto;
+    width: auto;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#liste_pages a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#liste_pages a:hover {
+    color: var(--title_color);
+    font-size: 2em;
+    transition: all 0.5s;
+}
+
+
+
+#bouton_mode {
+    padding: 10px;
+    margin: 10px;
+    font-size: 3em;
+    background-color: var(--box_color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5em;
+    width: 1.5em;
+    border: 0px;
+    cursor: pointer;
+}
+
+#bouton_mode:hover {
+    width: 1.7em;
+    height: 1.7em;
+    background-color: var(--background_color);
+    transition: all 0.5s;
+}
+
+#bouton_mode span {
+    font-size: 1.1em;
+    color: var(--text_color);
+}
+
+#bouton_mode:hover span {
+    font-size: 1.3em;
+    color: var(--title_color);
+}
+
+.darkmode {
+    --background_color: #11011B;
+    --text_color: white;
+    --title_color: #FFA500;
+    --box_color: rgba(0, 0, 0, 0.29);
+}
+
+#bouton_mode span:last-child {
+    display: none;
+}
+
+.darkmode #bouton_mode span:first-child {
+    display: none;
+}
+.darkmode #bouton_mode span:last-child {
+    display: block;
+}

@@ -1,6 +1,6 @@
 function resize() {
     let menu = document.getElementById("liste_pages");
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth > 768) {
         menu.style.display = "block";
     } else {
         menu.style.display = "none";

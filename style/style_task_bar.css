@@ -152,7 +152,7 @@ nav {
     nav {
         height: 100vh;
         flex-flow: column nowrap;
-        width: 7vw;
+        width: 4em;
         position: fixed;
         background-color: var(--box_color);
         padding: 15px;
@@ -160,17 +160,17 @@ nav {
     }
 
     main{
-        margin-left: 7vw;
+        margin-left: 4em;
         flex: 1;
     }
 
     nav:hover{
-        width: 15vw;
+        width: 14em;
         transition: all 0.5s ease;
     }
 
     nav:hover ~ main {
-        margin-left: 15vw;
+        margin-left: 14em;
         transition: all 0.5s ease;
     }
 
@@ -202,7 +202,15 @@ nav {
     }
 
     #bouton_mode {
-        margin: 0px;
+        margin: 5px;
+        height: 1.2em;
+        width: 1.2em;
+    }
+
+    nav:hover #bouton_mode{
+        height: 1.5em;
+        width: 1.5em;
+        transition: all 0.5s ease;
     }
 
     .separateur{

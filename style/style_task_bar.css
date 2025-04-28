@@ -5,7 +5,7 @@
     --background_color: #ffffff;
     --text_color: #000000;
     --title_color: #EFD100;
-    --box_color: rgba(0, 0, 0, 0.25);
+    --box_color: rgba(0, 0, 0, 0.13);
 }
 
 * {
@@ -26,6 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(to bottom, var(--box_color), var(--background_color));
 }
 
 #menu_bouton {
@@ -117,7 +118,7 @@ nav {
     --background_color: #11011B;
     --text_color: white;
     --title_color: #FFA500;
-    --box_color: rgba(0, 0, 0, 0.29);
+    --box_color: rgba(0, 0, 0, 0.521);
 }
 
 #bouton_mode svg:last-child {
@@ -150,6 +151,7 @@ nav {
     }
 
     nav {
+        background-image: none;
         height: 100vh;
         flex-flow: column nowrap;
         width: 4em;

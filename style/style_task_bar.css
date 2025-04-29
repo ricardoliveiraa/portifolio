@@ -152,27 +152,26 @@ nav {
 
     nav {
         background-image: none;
-        height: 100vh;
-        flex-flow: column nowrap;
-        width: 4em;
-        position: fixed;
+        flex-flow: row nowrap;
+        width: 100vw;
+        height: 5em;
+        position: absolute;
         background-color: var(--box_color);
         padding: 15px;
-        border-right: 2px solid var(--text_color);
     }
 
     main{
-        margin-left: 4em;
+        margin-top: 5em;
         flex: 1;
     }
 
     nav:hover{
-        width: 14em;
+        height: 6em;
         transition: all 0.5s ease;
     }
 
     nav:hover ~ main {
-        margin-left: 14em;
+        margin-top: 6em;
         transition: all 0.5s ease;
     }
 
@@ -182,10 +181,12 @@ nav {
 
     #liste_pages{
         all: unset;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
         list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 0px;
+        margin: 0px;
     }
 
     #liste_pages svg{

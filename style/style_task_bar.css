@@ -148,6 +148,7 @@ nav {
     body{
         display: flex;
         overflow-x: hidden;
+        flex-direction: column;
     }
 
     nav {

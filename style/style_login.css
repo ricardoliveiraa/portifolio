@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yanone+Kaffeesatz&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #0077e6, #3000dd);
+}
+
+#login_conteiner{
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #FFA500;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input{
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.5);
+}
+
+button {
+    height: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #FFA500;
+    border: #ffffff;
+}
+
+button:hover {
+    color: #FFA500;
+    background-color: #ffffff;
+    border: 1px solid #FFA500;
+    transition: all 0.5s ease;
+}

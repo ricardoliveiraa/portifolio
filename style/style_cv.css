@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yanone+Kaffeesatz&display=swap');
 
-:root {
-    --background_color: #ffffff;
-    --text_color: #000000;
-    --title_color: #EFD100;
-    --box_color: rgba(0, 0, 0, 0.25);
-}
 
 * {
     margin: 0px;
@@ -20,3 +14,262 @@ body {
     background-color: var(--background_color);
 }
 
+#hero_page {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, var(--background_color), var(--background_color2));
+}
+
+#hero_contenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hero_contenu h1 {
+    text-align: center;
+    font-size: 3em;
+    color: var(--text_color);
+}
+
+#hero_contenu p {
+    color: var(--text_color);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#hero_contenu a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text_color);
+    background-color: var(--title_color);
+}
+
+#hero_contenu a:hover{
+    background-color: #ffffff;
+    color: var(--title_color);
+    border: 1px solid var(--title_color);
+    transition: all 0.5s ease;
+}
+
+
+
+#apropos{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px;
+}
+
+#presentation {
+    margin-bottom: 30px;
+}
+
+#presentation h2 {
+    font-size: 1.6em;
+    color: var(--text_color);
+}
+
+#presentation p {
+    color: var(--text_color);
+    font-size: 1em;
+}
+
+#postit_conteiner {
+    position: relative;
+    height: 20em;
+    margin-top: 2em;
+}
+
+.post-it {
+    width: 15em;
+    padding: 1.2em;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+.post-it::before {
+    content: '';
+    position: absolute;
+    top: -0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5em;
+    height: 1.2em;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0.3em;
+    box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.1);
+}
+
+/* Post-it BLEU */
+#post-it1 {
+    top: 0;
+    left: 0;
+    background-color: #00e5ff;
+}
+
+/* Post-it ROSE */
+#post-it2 {
+    top: 10em;
+    left: 0;
+    background-color: #ff99e5;
+}
+
+/* Post-it JAUNE */
+#post-it3 {
+    top: 7em;
+    left: 50%;
+    background-color: #f7f1a4;
+}
+
+.post-it ul{
+    list-style: inside;
+}
+
+.post-it p{
+    font-size: 0.9em;
+}
+
+#post-it2 ul{
+    list-style: none;
+}
+
+#post-it2 li{
+    display: flex;
+    gap: 5px;
+}
+
+#post-it2 svg{
+    fill: #000000;
+}
+
+
+
+#etudes {
+    background-color: var(--background_color2);
+    padding: 30px 10px;
+}
+
+#etudes h2 {
+    text-align: center;
+    color: var(--title_color2);
+    font-size: 2em;
+}
+
+#specialites {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#notes {
+    align-self: center;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 2em;
+    color: var(--title_color);
+}
+
+thead {
+    border: 1px solid black;
+    background-color: #707070;
+}
+
+th, tr {
+    border: 1px solid black;
+    padding: 5px;
+    color: var(--text_color);
+}
+
+#opinion>h3{
+    color: var(--title_color);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#avis_spe_conteiner{
+    display: flex;
+    flex-direction: column;
+}
+
+.avis_spe {
+    background-color: var(--box_color);
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
+}
+
+.avis_spe h4{
+    color: var(--title_color2);
+    font-size: 1.3em;
+}
+
+
+
+
+#langages{
+    display: flex;
+    margin: 40px 10px;
+    justify-content: space-evenly;
+}
+
+.langage {
+    background-color: var(--box_color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.langage svg{
+    fill: var(--text_color);
+    height: 5em;
+    width: 5em;
+    display: block;
+    margin: auto;
+}
+
+.langage p{
+    text-align: center;
+    color: var(--text_color);
+    font-size: 1.1em;
+}
+
+.langage:hover svg{
+    fill: var(--title_color);
+    transition: all 0.3s ease;
+}
+
+.langage:hover p{
+    color: var(--title_color);
+    transition: all 0.3s ease;
+}
+
+
+
+#projets {
+    background-color: var(--background_color2);
+    padding: 30px 10px;
+}
+
+
+
+#loisirs{
+    padding: 30px 10px;
+}

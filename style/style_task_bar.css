@@ -3,8 +3,10 @@
 
 :root {
     --background_color: #ffffff;
+    --background_color2: #D9D9D9;
     --text_color: #000000;
-    --title_color: #EFD100;
+    --title_color: #EFBB00;
+    --title_color2: #0077e6;
     --box_color: rgba(0, 0, 0, 0.13);
 }
 
@@ -26,7 +28,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--box_color), var(--background_color));
 }
 
 #menu_bouton {
@@ -85,6 +86,7 @@ nav {
 #bouton_mode {
     padding: 10px;
     margin: 10px;
+    margin-right: 20px;
     font-size: 3em;
     background-color: var(--box_color);
     border-radius: 50%;
@@ -115,10 +117,12 @@ nav {
 }
 
 .darkmode {
-    --background_color: #11011B;
-    --text_color: white;
+    --background_color: #474747;
+    --background_color2: #272727;
+    --text_color: #ffffff;
     --title_color: #FFA500;
-    --box_color: rgba(0, 0, 0, 0.521);
+    --title_color2: #3000dd;
+    --box_color: rgba(0, 0, 0, 0.486);
 }
 
 #bouton_mode svg:last-child {
@@ -203,6 +207,10 @@ nav {
         display: block;
         opacity: 1;
         transition: all 0.5s ease;
+    }
+
+    #liste_pages a:hover{
+        font-size: 1.5em;
     }
 
     #bouton_mode {

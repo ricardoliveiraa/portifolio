@@ -50,7 +50,7 @@ body {
     text-align: center;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--text_color);
+    color: #ffffff;
     background-color: var(--title_color);
 }
 
@@ -323,6 +323,16 @@ th, tr {
     color: var(--text_color);
 }
 
+#source{
+    color: var(--title_color2);
+    text-decoration: none;
+}
+
+#source:hover{
+    color: var(--text_color);
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
 
 
 #loisirs{
